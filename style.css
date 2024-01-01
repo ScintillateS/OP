@@ -1,80 +1,80 @@
-/* style.css */
+/* styles/style.css */
 
-/* Reset margins and padding to give a clean layout */
+/* Reset default browser styling */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Set the font-family for the entire page */
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-  background-color: #fff;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-/* Style the header */
-.header {
-  background-color: #004d40; /* Dark green */
-  color: #fff;
-  padding: 20px 0;
-  text-align: center;
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
 }
 
-/* Style for navigation links - if you choose to have a navbar */
-nav {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #333;
+nav#navbar {
+    background: #444;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
+nav#navbar ul {
+    list-style: none;
 }
 
-/* Style the about section */
-.about {
-  background-color: #e8f5e9; /* Light green */
-  color: #333;
-  padding: 40px 20px;
-  text-align: center;
+nav#navbar ul li {
+    display: inline;
+    margin: 0 10px;
 }
 
-/* Portfolio section styles */
-.portfolio {
-  padding: 40px 20px;
+nav#navbar a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
-.portfolio-item {
-  background-color: #fff;
-  border: 1px solid #c8e6c9; /* Light green border */
-  padding: 20px;
-  margin-bottom: 20px;
+section {
+    padding: 2rem;
 }
 
-/* Style the contact section */
-.contact {
-  background-color: #004d40; /* Dark green */
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
+.profile-pic {
+    max-width: 150px;
+    margin: 1rem 0;
 }
 
-/* Responsive images */
-img {
-  max-width: 100%;
-  height: auto;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
 }
 
-/* Responsive design for smaller screens */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 @media (max-width: 768px) {
-  .portfolio {
-    grid-template-columns: 1fr;
-  }
+    nav#navbar {
+        flex-direction: column;
+    }
+
+    nav#navbar ul li {
+        margin-bottom: 0.5rem;
+    }
 }
