@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Online Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Online Portfolio</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/main.js" defer></script>
 </head>
 <body>
+    <header>
+        <h1>Your Name</h1>
+        <p>Tagline or Professional Title</p>
+    </header>
 
-  <header class="header">
-    <h1>Sahil Sandasani</h1>
-    <p>Dublin High School Senior | UC Berkeley's ATDP Alumni | Data Science and Computer Science TA Intern | Aspiring Programmer and Web Developer | Enterprising Entrepreneur and an Aerospace Enthusiast
-</p>
-  </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-  <nav>
-    <!-- Optional: Navigation links -->
-    <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+        <p>Description about yourself, your experiences, and your goals.</p>
+    </section>
 
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>Introduce yourself here. Talk about your background, experience, and why you love what you do.</p>
-    <img src="your-photo.jpg" alt="Your Name">
-  </section>
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="gallery">
+            <!-- Portfolio items will be inserted here -->
+        </div>
+    </section>
 
-  <section id="portfolio" class="portfolio">
-    <h2>My Portfolio</h2>
-    <!-- Add your portfolio items here -->
-  </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>Let people know how they can get in touch with you.</p>
-  </section>
-
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
 </body>
 </html>
