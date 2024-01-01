@@ -1,55 +1,78 @@
 /* style.css */
 
-/* Reset some basic elements */
-body, h1, h2, h3, p, figure {
+/* Reset margins and padding to give a clean layout */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-/* Use a sans-serif font and set a default size and color */
+/* Set the font-family for the entire page */
 body {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  color: #333; /* Replace with your preferred text color */
-  background: #fff; /* Replace with your preferred background color */
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
 }
 
 /* Style the header */
 .header {
-  background-color: #eee; /* Replace with your preferred color */
-  color: #333; /* Replace with your preferred text color */
+  background-color: #004d40; /* Dark green */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Style for navigation links - if you choose to have a navbar */
+nav {
   text-align: center;
   padding: 20px 0;
+  background-color: #333;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
 }
 
 /* Style the about section */
 .about {
+  background-color: #e8f5e9; /* Light green */
+  color: #333;
   padding: 40px 20px;
   text-align: center;
 }
 
-/* Portfolio gallery styles */
+/* Portfolio section styles */
 .portfolio {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 40px;
+  padding: 40px 20px;
 }
 
-/* Style each portfolio item */
 .portfolio-item {
-  background-color: #f9f9f9; /* Replace with your preferred color */
+  background-color: #fff;
+  border: 1px solid #c8e6c9; /* Light green border */
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 /* Style the contact section */
 .contact {
-  background-color: #ddd; /* Replace with your preferred color */
-  color: #333; /* Replace with your preferred text color */
+  background-color: #004d40; /* Dark green */
+  color: #fff;
   padding: 40px 20px;
   text-align: center;
 }
 
-/* Add responsiveness */
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive design for smaller screens */
 @media (max-width: 768px) {
   .portfolio {
     grid-template-columns: 1fr;
