@@ -1,6 +1,57 @@
+/* style.css */
 
-.about p{
-    margin: 0;
-    text-indent: 2rem;
-    text-align: justify;
+/* Reset some basic elements */
+body, h1, h2, h3, p, figure {
+  margin: 0;
+  padding: 0;
+}
+
+/* Use a sans-serif font and set a default size and color */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #333; /* Replace with your preferred text color */
+  background: #fff; /* Replace with your preferred background color */
+}
+
+/* Style the header */
+.header {
+  background-color: #eee; /* Replace with your preferred color */
+  color: #333; /* Replace with your preferred text color */
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Style the about section */
+.about {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Portfolio gallery styles */
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+/* Style each portfolio item */
+.portfolio-item {
+  background-color: #f9f9f9; /* Replace with your preferred color */
+}
+
+/* Style the contact section */
+.contact {
+  background-color: #ddd; /* Replace with your preferred color */
+  color: #333; /* Replace with your preferred text color */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Add responsiveness */
+@media (max-width: 768px) {
+  .portfolio {
+    grid-template-columns: 1fr;
   }
+}
